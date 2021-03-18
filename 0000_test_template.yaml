@@ -3,7 +3,7 @@
   hosts: localhost
   connection: local
   vars:
-    new_account_id: huehue
+    new_account_id: huehue_from_var
   tasks:
 
     - name: "print template"
