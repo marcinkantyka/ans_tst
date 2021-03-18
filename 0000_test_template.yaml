@@ -7,4 +7,4 @@
   tasks:
 
     - name: "print template"
-      debug: msg="{{ lookup('template','jobs/templates/custom_policy_20170209_v1_engineer.json.j2')  }}"
+      debug: msg="{{ lookup('template','templates/custom_policy_20170209_v1_engineer.json.j2')  }}"
