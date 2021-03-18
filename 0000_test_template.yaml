@@ -1,0 +1,10 @@
+---
+- name: test template print
+  hosts: localhost
+  connection: local
+  vars:
+    new_account_id: huehue
+  tasks:
+
+    - name: "print template"
+      debug: msg="{{ lookup('template','jobs/templates/custom_policy_20170209_v1_engineer.json.j2')  }}"
