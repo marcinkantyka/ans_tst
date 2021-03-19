@@ -10,9 +10,12 @@
       debug: msg="{{ lookup('template','templates/custom_policy_20170209_v1_engineer.json.j2')  }}"
       
       
+    - name: Changing perm of bash file, adding "+x"
+      file: dest=go.sh mode=a+x
+      
       
     - name: Execute  bash script
-      shell: chmod +x go.sh && ./go.sh 
+      shell: ./go.sh 
       register: out
     
     - name: print message from script
