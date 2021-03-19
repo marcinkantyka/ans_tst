@@ -19,4 +19,4 @@
       register: out
     
     - name: print message from script
-      debug: msg=out
+      debug: msg={{ out.stdout }} 
