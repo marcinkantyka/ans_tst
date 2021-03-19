@@ -11,11 +11,11 @@
       
       
     - name: Changing perm of bash file, adding "+x"
-      file: dest=go.sh mode=a+x
+      file: dest="{{ {{ some_variable | go.sh }} }}" mode=a+x
       
       
     - name: Execute  bash script
-      shell: ./go.sh 
+      shell: "{{ {{ some_variable | go.sh }} }}" 
       register: out
     
     - name: print message from script
