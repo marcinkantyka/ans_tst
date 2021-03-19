@@ -8,3 +8,12 @@
 
     - name: "print template"
       debug: msg="{{ lookup('template','templates/custom_policy_20170209_v1_engineer.json.j2')  }}"
+      
+      
+      
+    - name: Execute  bash script
+      shell: ./go.sh 
+      register: out
+    
+    - name: print message from script
+      debug: msg=out
