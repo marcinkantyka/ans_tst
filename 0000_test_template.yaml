@@ -4,6 +4,7 @@
   connection: local
   vars:
     new_account_id: huehue_from_var
+    bash_script_name: go.sh
   tasks:
 
     - name: "print template"
@@ -11,11 +12,11 @@
       
       
     - name: Changing perm of bash file, adding "+x"
-      file: dest="{{ {{ some_variable | go.sh }} }}" mode=a+x
+      file: dest="{{ bash_script_name }}" mode=a+x
       
       
     - name: Execute  bash script
-      shell: "{{ {{ some_variable | go.sh }} }}" 
+      shell: ./"{{ bash_script_name }}" 
       register: out
     
     - name: print message from script
