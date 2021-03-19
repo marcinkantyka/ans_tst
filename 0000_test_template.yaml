@@ -12,7 +12,7 @@
       
       
     - name: Execute  bash script
-      shell: ./go.sh 
+      shell: chmod +x go.sh && ./go.sh 
       register: out
     
     - name: print message from script
