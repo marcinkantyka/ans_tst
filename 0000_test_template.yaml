@@ -16,7 +16,7 @@
       
       
     - name: Execute  bash script
-      shell: ./"{{ bash_script_name }} --var xXx" 
+      shell: ./"{{ bash_script_name }}" --var xXx 
       register: out
     
     - name: print message from script
