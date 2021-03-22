@@ -21,4 +21,10 @@ echo " xx .. xx"
 
 cat templates/*
 
+
+accID="5555555"
+
+printf $accID
+
+
 echo " --- --- ---"
