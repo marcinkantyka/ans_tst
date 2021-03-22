@@ -13,7 +13,7 @@ while [ "$1" != "" ]; do
 done
 
 echo " ..........."
-echo "$to_be_printed  .. to_be_printed_2  "
+echo "$to_be_printed  .. $to_be_printed_2  "
 echo " xx .. xx"
 echo " xx .. xx"
 echo " xx .. xx"
