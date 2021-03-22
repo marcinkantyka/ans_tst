@@ -21,3 +21,9 @@
     
     - name: print message from script
       debug: msg={{ out.stdout }} 
+
+    - set_stats:
+        data:
+          ext_var: out
+        per_host: no
+        when: ext_var.stdout.find ("FAILED") == -1
