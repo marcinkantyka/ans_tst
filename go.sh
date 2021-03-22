@@ -12,14 +12,14 @@ while [ "$1" != "" ]; do
     shift
 done
 
-echo " ..........."
-echo "$to_be_printed  .. $to_be_printed_2  "
-echo " xx .. xx"
-echo " xx .. xx"
-echo " xx .. xx"
-echo " xx .. xx"
+#echo " ..........."
+#echo "$to_be_printed  .. $to_be_printed_2  "
+#echo " xx .. xx"
+#echo " xx .. xx"
+#echo " xx .. xx"
+e#cho " xx .. xx"
 
-cat templates/*
+#cat templates/*
 
 
 accID="5555555"
@@ -27,4 +27,4 @@ accID="5555555"
 printf $accID
 
 
-echo " --- --- ---"
+#echo " --- --- ---"
