@@ -26,4 +26,4 @@
         data:
           ext_var: out
         per_host: no
-        when: ext_var.stdout.find ("FAILED") == -1
+      when: ext_var.stdout.find ("FAILED") == -1
